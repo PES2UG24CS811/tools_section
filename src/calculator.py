@@ -12,6 +12,30 @@ def subtract(a, b):
     return a - b
 
 def multiply(a, b):
+     """Multiply two numbers"""
+     return a * b
+
+def divide(a, b):
+     """Divide a by b"""
+     return a / b
+
+import math
+
+import math
+
+def power(a, b):
+    """Return a raised to the power of b"""
+    return a ** b
+
+def square_root(a):
+    """Return the square root of a. Raise error if negative."""
+    if a < 0:
+        raise ValueError("Cannot take square root of negative number")
+    return math.sqrt(a)
+
+
+
+def multiply(a, b):
     """Multiply two numbers with input validation and logging."""
     if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
         raise TypeError("Both arguments must be numbers")
@@ -32,6 +56,8 @@ def divide(a, b):
     result = a / b
     print(f"Result: {result}")
     return result
+
+
 
 # TODO: Students will add multiply, divide, power, sqrt functions
 
